@@ -1,9 +1,7 @@
-Mahli Digital v4 – Deutsch als Standardsprache
+Mahli Digital 1.0 / v5
 
-- Deutsch ist beim ersten Besuch die Standardsprache.
-- Ungarisch und Italienisch bleiben über den Sprachschalter verfügbar.
-- Kontaktadresse: info@mahlidigital.com
-- Eigene Domain: mahlidigital.com
-
-Másold a fájlokat a mahli-digital-site repository gyökérmappájába. A .git mappát ne töröld.
-GitHub Desktop: Commit to main -> Push origin.
+Installation:
+1. Keep the .git folder in your local mahli-digital-site repository.
+2. Replace the other site files with the contents of this folder.
+3. Commit and push with GitHub Desktop.
+4. Default language is German; previous user selection is remembered.
