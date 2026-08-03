@@ -1,23 +1,11 @@
-MMI FAZÉK 1.0 FINAL
+MAHLI DIGITAL – háromnyelvű weboldal
 
-Tartalom:
-- index.html
-- szolgaltatasok.html
-- kapcsolat.html
-- galeria.html
-- hasznalt-alkatreszek.html
-- 404.html
-- CNAME
-- robots.txt
-- sitemap.xml
-- assets mappa minden szükséges képpel és logóval
+Telepítés a meglévő mahli-digital-site repository helyi mappájába:
+1. A .git mappát NE töröld.
+2. Törölj minden más régi MMI Fazék fájlt és mappát.
+3. Másold be ennek a csomagnak minden fájlját és az assets mappát.
+4. GitHub Desktop: Commit to main, majd Push origin.
+5. Frissítés után: Ctrl + F5.
 
-Feltöltés GitHubra:
-1. A ZIP tartalmát töltsd fel úgy, hogy az index.html a repository gyökerében legyen.
-2. GitHub → Settings → Pages
-3. Source: Deploy from a branch
-4. Branch: main / (root)
-5. Custom domain: mmifazek.com
-6. Várj néhány percet, majd Ctrl + F5.
-
-A logó alfelirata: MMI SPECIALISTA
+Nyelvek: magyar, német, olasz.
+Kapcsolat: mrobika84@gmail.com

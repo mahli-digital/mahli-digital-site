@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://mmifazek.com/sitemap.xml
+Sitemap: https://mahli-digital.github.io/mahli-digital-site/sitemap.xml
