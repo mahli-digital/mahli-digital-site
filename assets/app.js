@@ -33,7 +33,7 @@ const translations={
 const buttons=[...document.querySelectorAll('[data-lang]')];
 function setLanguage(lang){const dict=translations[lang]||translations.hu;document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{const v=dict[el.dataset.i18n];if(v)el.textContent=v});buttons.forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));localStorage.setItem('mahli-language',lang)}
 buttons.forEach(b=>b.addEventListener('click',()=>setLanguage(b.dataset.lang)));
-const saved=localStorage.getItem('mahli-language'),browser=(navigator.language||'hu').slice(0,2);setLanguage(saved||(['hu','de','it'].includes(browser)?browser:'de'));
+const saved=localStorage.getItem('mahli-language');setLanguage(saved||'de');
 document.getElementById('year').textContent=new Date().getFullYear();
 const menuButton=document.querySelector('.menu-toggle'),nav=document.querySelector('.main-nav');menuButton.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',open)});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
 const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));

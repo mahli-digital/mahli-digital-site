@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://mahli-digital.github.io/mahli-digital-site/sitemap.xml
+Sitemap: https://mahlidigital.com/sitemap.xml
