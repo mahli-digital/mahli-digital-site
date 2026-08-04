@@ -42,3 +42,13 @@ function applyLanguage(lang){
 document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>applyLanguage(b.dataset.lang)));
 applyLanguage(localStorage.getItem('mahli-lang')||'de');
 document.querySelectorAll('#year').forEach(x=>x.textContent=new Date().getFullYear());
+
+// Mahli Digital 2.0 enhancements
+if(menu){menu.innerHTML='<span></span><span></span><span></span>';}
+document.querySelectorAll('.reveal').forEach((el)=>{
+  if(!('IntersectionObserver' in window)){el.classList.add('visible');return;}
+  const obs=new IntersectionObserver((entries,o)=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');o.unobserve(e.target)}}),{threshold:.12});
+  obs.observe(el);
+});
+const current=(location.pathname.split('/').pop()||'index.html');
+document.querySelectorAll('.main-nav a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')===current));
