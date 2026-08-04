@@ -1,12 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 72" role="img" aria-labelledby="title desc">
-  <title id="title">Mahli Digital</title><desc id="desc">MD monogram and Mahli Digital wordmark</desc>
-  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#32d9ff"/><stop offset=".52" stop-color="#1685ff"/><stop offset="1" stop-color="#5d7cff"/></linearGradient></defs>
-  <g fill="none" stroke="url(#g)" stroke-width="9" stroke-linecap="square" stroke-linejoin="miter">
-    <path d="M10 55V16L34 43 58 16v39"/>
-    <path d="M58 16h18c19 0 31 7 31 20s-12 19-31 19H58"/>
-  </g>
-  <g fill="#f8fbff" font-family="Inter,Arial,sans-serif" font-weight="800" letter-spacing="2">
-    <text x="126" y="31" font-size="20">MAHLI</text>
-    <text x="126" y="52" font-size="12" fill="#32d9ff" letter-spacing="5">DIGITAL</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 92" role="img" aria-labelledby="title desc">
+  <title id="title">Mahli Digital</title><desc id="desc">MD lettermark and Mahli Digital wordmark</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#41d8ff"/><stop offset=".5" stop-color="#108cff"/><stop offset="1" stop-color="#5b7cff"/></linearGradient>
+  </defs>
+  <path fill="url(#g)" d="M8 70V14h16l30 29 30-29h17v56H83V37L54 65 26 37v33H8z"/>
+  <path fill="url(#g)" d="M105 14h37c25 0 42 11 42 28s-17 28-42 28h-37V14zm19 16v24h18c13 0 22-4 22-12s-9-12-22-12h-18z"/>
+  <text x="205" y="39" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="800" letter-spacing="4">MAHLI</text>
+  <text x="207" y="66" fill="#38cfff" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" letter-spacing="8">DIGITAL</text>
 </svg>
