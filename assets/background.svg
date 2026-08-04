@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06111e"/>
+      <stop offset="0.42" stop-color="#0a2642"/>
+      <stop offset="0.72" stop-color="#0b3a52"/>
+      <stop offset="1" stop-color="#061723"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="68%" cy="24%" r="52%">
+      <stop offset="0" stop-color="#37d8ff" stop-opacity=".42"/>
+      <stop offset=".38" stop-color="#1d7dce" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#071321" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mount1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#204969"/>
+      <stop offset="1" stop-color="#081725"/>
+    </linearGradient>
+    <linearGradient id="mount2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#173851"/>
+      <stop offset="1" stop-color="#06111c"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="28"/></filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="8"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .09 0"/></filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <rect width="1920" height="1080" fill="url(#glow)"/>
+  <ellipse cx="1400" cy="210" rx="260" ry="110" fill="#5feeff" opacity=".10" filter="url(#blur)"/>
+  <g opacity=".55" fill="none" stroke="#8cefff" stroke-width="1">
+    <path d="M-80 420 C260 260 480 430 760 300 S1250 180 1580 310 1940 190 2050 240"/>
+    <path d="M-120 480 C240 320 520 500 820 360 S1290 230 1640 360 1930 280 2050 315" opacity=".42"/>
+  </g>
+  <path d="M0 790 L180 620 310 710 495 435 635 655 800 500 920 690 1100 460 1260 665 1425 395 1600 645 1765 510 1920 660 1920 1080 0 1080Z" fill="url(#mount1)" opacity=".82"/>
+  <path d="M0 870 L220 710 395 835 610 590 790 805 1010 650 1180 815 1390 610 1580 795 1760 690 1920 810 1920 1080 0 1080Z" fill="url(#mount2)" opacity=".94"/>
+  <path d="M0 910 C310 850 520 930 780 872 S1260 850 1540 900 1810 855 1920 875 L1920 1080 0 1080Z" fill="#04101a"/>
+  <g fill="#4cecff" opacity=".48">
+    <circle cx="280" cy="856" r="2"/><circle cx="330" cy="842" r="1.5"/><circle cx="410" cy="866" r="2"/><circle cx="1220" cy="840" r="1.5"/><circle cx="1280" cy="826" r="2"/><circle cx="1510" cy="864" r="1.5"/><circle cx="1600" cy="848" r="2"/>
+  </g>
+  <rect width="1920" height="1080" filter="url(#grain)" opacity=".28"/>
+</svg>
