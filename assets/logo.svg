@@ -1,10 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 92" role="img" aria-labelledby="title desc">
-  <title id="title">Mahli Digital</title><desc id="desc">MD lettermark and Mahli Digital wordmark</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" role="img" aria-labelledby="title desc">
+  <title id="title">Mahli Digital</title>
+  <desc id="desc">Egybefolyó MD monogram és Mahli Digital felirat</desc>
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#41d8ff"/><stop offset=".5" stop-color="#108cff"/><stop offset="1" stop-color="#5b7cff"/></linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#43e7ff"/>
+      <stop offset="0.52" stop-color="#1e9cff"/>
+      <stop offset="1" stop-color="#765fff"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <path fill="url(#g)" d="M8 70V14h16l30 29 30-29h17v56H83V37L54 65 26 37v33H8z"/>
-  <path fill="url(#g)" d="M105 14h37c25 0 42 11 42 28s-17 28-42 28h-37V14zm19 16v24h18c13 0 22-4 22-12s-9-12-22-12h-18z"/>
-  <text x="205" y="39" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="800" letter-spacing="4">MAHLI</text>
-  <text x="207" y="66" fill="#38cfff" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" letter-spacing="8">DIGITAL</text>
+  <!-- One continuous MD mark: the right stem of the M is also the left stem of the D -->
+  <path d="M28 124V34L76 92L124 34V124M124 34H174C222 34 250 52 250 79C250 106 222 124 174 124H124" fill="none" stroke="url(#g)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <text x="290" y="79" fill="#f6fbff" font-family="Arial,Helvetica,sans-serif" font-size="48" font-weight="800" letter-spacing="3">MAHLI</text>
+  <text x="293" y="121" fill="#39cfff" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="800" letter-spacing="10">DIGITAL</text>
 </svg>

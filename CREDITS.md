@@ -1,9 +1,7 @@
-# Bildnachweis
+# Image credit
 
-Hero-Hintergrund: **Grödner Dolomiten Seiser-Alm Hi res.jpg**  
-Fotograf: Wolfgang Moroder  
-Quelle: Wikimedia Commons  
-Lizenz: CC BY-SA 3.0  
-https://commons.wikimedia.org/wiki/File:Gr%C3%B6dner_Dolomiten_Seiser-Alm_Hi_res.jpg
+Background photo: “Alpe Di Siusi Dolomites” by Giovanni Cioli, Wikimedia Commons.
+License: CC BY 3.0 — https://creativecommons.org/licenses/by/3.0/
+Source: https://commons.wikimedia.org/wiki/File:Alpe_Di_Siusi_Dolomites_(80446477).jpeg
 
-Für die Website wurde eine verkleinerte Kopie verwendet und durch CSS abgedunkelt. Die Urheberschaft und Lizenz müssen erhalten bleiben.
+The photo is darkened and cropped through CSS for the website background.
