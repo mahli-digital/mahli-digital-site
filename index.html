@@ -8,72 +8,99 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
 
-<style id="home-mobile-header-fix">
+<style id="home-mobile-header-fix-v2">
 @media (max-width: 760px){
-  /* Match the stable mobile header behavior used on the subpages */
-  header,
-  .site-header,
-  .topbar,
-  .navbar,
-  .nav-wrap,
-  .header-wrap{
-    position: sticky !important;
-    top: 0 !important;
-    z-index: 9999 !important;
-  }
+  html,body{overflow-x:hidden!important}
 
-  header,
+  /* Home header: same compact centered card as the subpages */
+  header.site-header,
   .site-header{
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
+    position:sticky!important;
+    top:8px!important;
+    left:auto!important;
+    right:auto!important;
+    width:calc(100% - 24px)!important;
+    max-width:calc(100% - 24px)!important;
+    margin:8px auto 0!important;
+    transform:none!important;
+    translate:none!important;
+    z-index:9999!important;
+    box-sizing:border-box!important;
   }
 
-  header > *,
-  .site-header > *,
-  .topbar,
-  .navbar,
-  .nav-wrap,
-  .header-wrap{
-    box-sizing: border-box !important;
+  .site-header .header-inner,
+  .site-header .nav-inner,
+  .site-header .nav-wrap,
+  .site-header .navbar,
+  header .header-inner,
+  header .nav-inner{
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    margin:0!important;
+    box-sizing:border-box!important;
+    display:flex!important;
+    align-items:center!important;
   }
 
-  /* Prevent the home header from stretching wider than the viewport */
-  .topbar,
-  .navbar,
-  .nav-wrap,
-  .header-wrap{
-    width: calc(100% - 24px) !important;
-    max-width: calc(100% - 24px) !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+  /* Never let the logo push hamburger/language controls outside viewport */
+  .site-header .brand,
+  .site-header .logo,
+  .site-header .site-logo,
+  header .brand,
+  header .logo{
+    min-width:0!important;
+    flex:0 1 auto!important;
+    max-width:44%!important;
+  }
+  .site-header .brand img,
+  .site-header .logo img,
+  .site-header .site-logo img,
+  header .brand img,
+  header .logo img{
+    max-width:100%!important;
+    height:auto!important;
   }
 
-  /* Keep logo / hamburger compact and vertically aligned */
-  .brand,
-  .logo,
-  .site-logo{
-    flex: 0 0 auto !important;
+  .site-header .menu-toggle,
+  .site-header .nav-toggle,
+  .site-header .hamburger,
+  header .menu-toggle,
+  header .nav-toggle,
+  header .hamburger{
+    flex:0 0 auto!important;
+    margin-left:auto!important;
   }
 
-  .menu-toggle,
-  .nav-toggle,
-  .hamburger{
-    flex: 0 0 auto !important;
-    margin-left: auto !important;
+  .site-header .lang-switch,
+  .site-header .language-switcher,
+  .site-header .languages,
+  header .lang-switch,
+  header .language-switcher{
+    flex:0 0 auto!important;
+    width:auto!important;
+    max-width:none!important;
+    margin-left:10px!important;
   }
 
-  /* Avoid accidental header disappearance caused by home-only transforms */
-  header.hide,
-  header.hidden,
+  /* Open mobile navigation must stay inside the screen */
+  .site-header nav,
+  .site-header .mobile-nav,
+  header .mobile-nav{
+    max-width:100%!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Cancel any home-only scroll-away state */
+  .site-header.hidden,
   .site-header.hide,
-  .site-header.hidden{
-    transform: none !important;
-    translate: none !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+  .site-header.scrolled-away,
+  header.hidden,
+  header.hide{
+    transform:none!important;
+    translate:none!important;
+    opacity:1!important;
+    visibility:visible!important;
   }
 }
 </style>
