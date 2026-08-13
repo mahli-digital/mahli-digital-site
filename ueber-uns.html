@@ -1,1 +1,228 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Über uns | Mahli Digital</title><link rel="icon" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"></head><body><div class="page-bg"></div><header class="site-header"><a class="brand" href="index.html"><img src="assets/logo.svg" alt="Mahli Digital"></a><nav class="nav"><a href="index.html">Start</a><a href="leistungen.html">Leistungen</a><a href="preise.html">Preise</a><a href="referenzen.html">Referenzen</a><a href="ueber-uns.html">Über uns</a><a href="kontakt.html">Kontakt</a></nav><div class="header-actions"><a class="btn btn-primary header-cta" href="kontakt.html">Projekt starten</a></div></header><main class="preview-section" style="padding-top:170px;min-height:100vh"><div class="glass-card" style="max-width:860px;margin:auto;min-height:300px"><p class="eyebrow">MAHLI DIGITAL</p><h1 style="font-size:54px;margin:0 0 20px">Über uns</h1><p style="color:#c7d5e2;font-size:18px">Diese Seite wird als nächster Schritt im gleichen Design ausgebaut.</p><a class="btn btn-primary" href="index.html">Zur Startseite</a></div></main></body></html>
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Über mich | Mahli Digital</title>
+  <meta name="description" content="Webdesign, mehrsprachige Webseiten, SEO, Domain, E-Mail und persönliche Betreuung für Unternehmen in Südtirol.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+
+<style>
+.references-page{width:min(1180px,calc(100% - 36px));margin:0 auto;padding:76px 0 70px}
+.references-hero{max-width:760px;margin-bottom:34px}
+.references-hero .eyebrow{display:inline-block;font-size:.78rem;font-weight:800;letter-spacing:.18em;opacity:.72;margin-bottom:10px}
+.references-hero h1{font-size:clamp(2.1rem,5vw,4.2rem);line-height:1.02;margin:0 0 16px}
+.references-hero p{font-size:1.08rem;line-height:1.65;opacity:.82;margin:0}
+.reference-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:900px}
+.reference-card{overflow:hidden;border:1px solid rgba(255,255,255,.14);background:rgba(7,13,20,.62);backdrop-filter:blur(14px);border-radius:22px;box-shadow:0 18px 50px rgba(0,0,0,.22)}
+.reference-preview{height:220px;position:relative;display:flex;align-items:flex-end;padding:20px;background-size:cover;background-position:center}
+.reference-preview:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(3,8,14,.9),rgba(3,8,14,.05))}
+.preview-label{position:relative;z-index:1;font-weight:900;letter-spacing:.12em;font-size:.85rem}
+.reference-preview-mmi{background:radial-gradient(circle at 70% 25%,rgba(204,32,32,.45),transparent 34%),linear-gradient(135deg,#202b36,#070b10 72%)}
+.reference-preview-next{background:radial-gradient(circle at 70% 20%,rgba(255,255,255,.13),transparent 28%),linear-gradient(145deg,#242b32,#0a0f14 75%)}
+.reference-body{padding:22px 22px 24px}
+.reference-type{font-size:.75rem;text-transform:uppercase;letter-spacing:.13em;opacity:.62;margin-bottom:8px}
+.reference-body h2{font-size:1.35rem;margin:0 0 10px}
+.reference-body p{min-height:96px;line-height:1.55;opacity:.78;margin:0 0 18px}
+.reference-link{display:inline-block;text-decoration:none;font-weight:800}
+.reference-link.muted{opacity:.55}
+@media(max-width:900px){.reference-grid{grid-template-columns:1fr 1fr}.reference-body p{min-height:0}}
+@media(max-width:620px){.references-page{width:min(100% - 24px,1180px);padding:52px 0}.reference-grid{grid-template-columns:1fr}.reference-preview{height:190px}}
+
+.mmi-reference-logo{position:absolute;z-index:1;left:50%;top:46%;transform:translate(-50%,-50%);width:min(78%,300px);max-height:125px;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(0,0,0,.35))}
+.reference-preview-mmi .preview-label{opacity:.72}
+</style>
+
+<style>
+.about-page{width:min(1180px,calc(100% - 36px));margin:0 auto;padding:76px 0 72px}
+.about-hero{max-width:800px;margin-bottom:34px}
+.about-hero .eyebrow,.card-label,.profile-kicker{display:inline-block;font-size:.76rem;font-weight:800;letter-spacing:.18em;opacity:.72}
+.about-hero .eyebrow{margin-bottom:10px}
+.about-hero h1{font-size:clamp(2.2rem,5vw,4.4rem);line-height:1.02;margin:0 0 16px}
+.about-hero p{font-size:1.08rem;line-height:1.65;opacity:.82;margin:0}
+.about-grid{display:grid;grid-template-columns:.85fr 1.55fr;gap:20px;margin-bottom:20px}
+.about-card,.value-card,.about-cta{border:1px solid rgba(255,255,255,.14);background:rgba(7,13,20,.62);backdrop-filter:blur(14px);border-radius:22px;box-shadow:0 18px 50px rgba(0,0,0,.22)}
+.about-card{padding:28px}
+.about-profile{display:flex;align-items:center;gap:22px;min-height:230px}
+.profile-mark{width:96px;height:96px;border-radius:24px;display:flex;align-items:center;justify-content:center;font-size:2.25rem;font-weight:900;letter-spacing:-.08em;background:linear-gradient(135deg,#19c9f3,#5a59ff);box-shadow:0 14px 34px rgba(30,147,255,.28)}
+.about-profile h2{font-size:1.7rem;margin:8px 0 6px}
+.about-profile p{margin:0;opacity:.76}
+.about-story h2{font-size:1.55rem;line-height:1.2;margin:10px 0 14px}
+.about-story p{line-height:1.65;opacity:.8;margin:0 0 12px}
+.values-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-bottom:20px}
+.value-card{padding:24px}
+.value-number{font-size:.78rem;font-weight:900;letter-spacing:.15em;opacity:.48}
+.value-card h3{font-size:1.2rem;margin:14px 0 10px}
+.value-card p{line-height:1.55;opacity:.76;margin:0}
+.about-cta{padding:26px 28px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.about-cta h2{font-size:1.55rem;margin:8px 0 8px}
+.about-cta p{margin:0;opacity:.76}
+.about-cta-btn{flex:0 0 auto;text-decoration:none;font-weight:900;padding:14px 20px;border-radius:13px;background:linear-gradient(135deg,#22c8f5,#5c58ff);box-shadow:0 12px 28px rgba(40,120,255,.26)}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr}.values-grid{grid-template-columns:1fr 1fr}.values-grid .value-card:last-child{grid-column:1/-1}.about-cta{align-items:flex-start;flex-direction:column}}
+@media(max-width:620px){.about-page{width:min(100% - 24px,1180px);padding:52px 0}.about-profile{align-items:flex-start;flex-direction:column}.profile-mark{width:82px;height:82px}.values-grid{grid-template-columns:1fr}.values-grid .value-card:last-child{grid-column:auto}.about-cta-btn{width:100%;text-align:center}}
+</style>
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Mahli Digital Startseite">
+      <img src="assets/logo.svg" alt="Mahli Digital">
+    </a>
+    <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="index.html" data-i18n="nav.home">Start</a>
+      <a class="active" href="leistungen.html" data-i18n="nav.services">Leistungen</a>
+      <a href="preise.html" data-i18n="nav.prices">Preise</a>
+      <a href="referenzen.html" data-i18n="nav.references">Referenzen</a>
+      <a href="ueber-uns.html" data-i18n="nav.about">Über uns</a>
+      <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
+    </nav>
+    <div class="header-actions">
+      <div class="language-switch" aria-label="Sprache wählen">
+        <button data-lang="de" class="active">DE</button>
+        <button data-lang="it">IT</button>
+        <button data-lang="hu">HU</button>
+      </div>
+      <a href="kontakt.html" class="btn btn-primary header-cta" data-i18n="nav.cta">Kostenloses Erstgespräch</a>
+    </div>
+  </header>
+
+  <main class="subpage-main">
+<section class="about-page">
+  <div class="about-hero">
+    <span class="eyebrow" data-i18n="about_eyebrow">ÜBER MICH</span>
+    <h1 data-i18n="about_title">Persönlich. Direkt. Digital.</h1>
+    <p data-i18n="about_intro">Mahli Digital steht für moderne Websites ohne unnötige Umwege – mit persönlicher Betreuung von der ersten Idee bis zur fertigen Seite.</p>
+  </div>
+
+  <div class="about-grid">
+    <article class="about-card about-profile">
+      <div class="profile-mark">MD</div>
+      <div>
+        <div class="profile-kicker" data-i18n="about_name_label">IHR ANSPRECHPARTNER</div>
+        <h2>MÁHLI RÓBERT</h2>
+        <p data-i18n="about_role">Webdesign & digitale Lösungen</p>
+      </div>
+    </article>
+
+    <article class="about-card about-story">
+      <span class="card-label" data-i18n="about_story_label">MEIN ANSATZ</span>
+      <h2 data-i18n="about_story_title">Websites, die zum Unternehmen passen.</h2>
+      <p data-i18n="about_story_text">Ich entwickle klare, moderne und responsive Websites für kleine und mittlere Unternehmen. Dabei geht es nicht um unnötig komplizierte Lösungen, sondern um einen professionellen Auftritt, der verständlich, schnell und einfach zu pflegen ist.</p>
+      <p data-i18n="about_story_text2">Jedes Projekt wird persönlich betreut. Sie sprechen direkt mit der Person, die Ihre Website gestaltet und umsetzt – ohne Agenturwege und ohne wechselnde Ansprechpartner.</p>
+    </article>
+  </div>
+
+  <div class="values-grid">
+    <article class="value-card">
+      <span class="value-number">01</span>
+      <h3 data-i18n="about_v1_title">Persönlicher Kontakt</h3>
+      <p data-i18n="about_v1_text">Direkte Kommunikation, schnelle Abstimmung und ein fester Ansprechpartner während des gesamten Projekts.</p>
+    </article>
+    <article class="value-card">
+      <span class="value-number">02</span>
+      <h3 data-i18n="about_v2_title">Klare Lösungen</h3>
+      <p data-i18n="about_v2_text">Keine unnötige Technik. Sie bekommen genau das, was Ihr Unternehmen wirklich braucht.</p>
+    </article>
+    <article class="value-card">
+      <span class="value-number">03</span>
+      <h3 data-i18n="about_v3_title">Modern auf jedem Gerät</h3>
+      <p data-i18n="about_v3_text">Ihre Website funktioniert sauber und professionell auf Smartphone, Tablet und Desktop.</p>
+    </article>
+  </div>
+
+  <section class="about-cta">
+    <div>
+      <span class="card-label" data-i18n="about_cta_label">LASSEN SIE UNS STARTEN</span>
+      <h2 data-i18n="about_cta_title">Sie haben eine Idee für Ihre Website?</h2>
+      <p data-i18n="about_cta_text">Erzählen Sie mir kurz von Ihrem Projekt. Das erste Gespräch ist kostenlos und unverbindlich.</p>
+    </div>
+    <a href="kontakt.html" class="about-cta-btn" data-i18n="about_cta_btn">Kostenlose Beratung</a>
+  </section>
+</section>
+</main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="index.html"><img src="assets/logo.svg" alt="Mahli Digital"></a>
+    <p>info@mahlidigital.com</p>
+    <div><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+    <small>© 2026 Mahli Digital</small>
+  </footer>
+
+  <script src="assets/app.js"></script>
+
+<script>
+(function(){
+ const R={
+  de:{ref_eyebrow:"REFERENZEN",ref_title:"Ausgewählte Projekte",ref_intro:"Websites, die klar, modern und passend zum jeweiligen Unternehmen umgesetzt wurden.",ref_mmi_type:"Automotive · Website",ref_mmi_text:"Mehrsprachige Website für Audi MMI, Diagnose und Fahrzeug-Elektronik – mit Leistungen, Galerie und Kontaktbereich.",ref_visit:"Website ansehen →",ref_next_label:"NÄCHSTES PROJEKT",ref_next_type:"Neue Referenz",ref_next_title:"Hier könnte Ihr Projekt stehen.",ref_next_text:"Sie möchten eine moderne Website für Ihr Unternehmen? Erzählen Sie mir kurz, was Sie brauchen.",ref_contact:"Projekt anfragen →"},
+  it:{ref_eyebrow:"REFERENZE",ref_title:"Progetti selezionati",ref_intro:"Siti web chiari, moderni e realizzati su misura per ogni attività.",ref_mmi_type:"Automotive · Sito web",ref_mmi_text:"Sito multilingue dedicato ad Audi MMI, diagnostica ed elettronica dell’auto, con servizi, galleria e contatti.",ref_visit:"Visita il sito →",ref_next_label:"PROSSIMO PROGETTO",ref_next_type:"Nuova referenza",ref_next_title:"Qui potrebbe esserci il tuo progetto.",ref_next_text:"Vuoi un sito moderno per la tua attività? Raccontami brevemente di cosa hai bisogno.",ref_contact:"Richiedi un progetto →"},
+  hu:{ref_eyebrow:"REFERENCIÁK",ref_title:"Kiemelt projektek",ref_intro:"Letisztult, modern és az adott vállalkozásra szabott weboldalak.",ref_mmi_type:"Autóipar · Weboldal",ref_mmi_text:"Többnyelvű weboldal Audi MMI, diagnosztika és autóelektronika témában, szolgáltatásokkal, galériával és kapcsolat oldallal.",ref_visit:"Weboldal megnyitása →",ref_next_label:"KÖVETKEZŐ PROJEKT",ref_next_type:"Új referencia",ref_next_title:"Itt lehetne az Ön projektje.",ref_next_text:"Modern weboldalt szeretne vállalkozásának? Írja meg röviden, mire van szüksége.",ref_contact:"Projekt ajánlatkérés →"}
+ };
+ function apply(lang){
+   lang=(lang||"de").toLowerCase();
+   if(!R[lang]) lang="de";
+   document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.dataset.i18n;if(R[lang][k]) el.textContent=R[lang][k];});
+ }
+ function current(){
+   const active=document.querySelector('[data-lang].active,[data-lang][aria-current="true"],.lang-btn.active,.language-btn.active');
+   if(active) return (active.dataset.lang||active.textContent).trim().toLowerCase();
+   return (localStorage.getItem("lang")||localStorage.getItem("language")||document.documentElement.lang||"de").slice(0,2);
+ }
+ document.addEventListener("DOMContentLoaded",()=>{apply(current()); setTimeout(()=>apply(current()),100);});
+ document.addEventListener("click",e=>{
+   const b=e.target.closest("[data-lang],.lang-btn,.language-btn");
+   if(!b) return;
+   const lang=(b.dataset.lang||b.textContent).trim().toLowerCase().slice(0,2);
+   setTimeout(()=>apply(lang),0);
+ });
+ new MutationObserver(()=>apply(current())).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});
+})();
+</script>
+
+<script>
+(function(){
+ const A={
+ de:{
+  about_eyebrow:"ÜBER MICH",about_title:"Persönlich. Direkt. Digital.",about_intro:"Mahli Digital steht für moderne Websites ohne unnötige Umwege – mit persönlicher Betreuung von der ersten Idee bis zur fertigen Seite.",
+  about_name_label:"IHR ANSPRECHPARTNER",about_role:"Webdesign & digitale Lösungen",
+  about_story_label:"MEIN ANSATZ",about_story_title:"Websites, die zum Unternehmen passen.",about_story_text:"Ich entwickle klare, moderne und responsive Websites für kleine und mittlere Unternehmen. Dabei geht es nicht um unnötig komplizierte Lösungen, sondern um einen professionellen Auftritt, der verständlich, schnell und einfach zu pflegen ist.",about_story_text2:"Jedes Projekt wird persönlich betreut. Sie sprechen direkt mit der Person, die Ihre Website gestaltet und umsetzt – ohne Agenturwege und ohne wechselnde Ansprechpartner.",
+  about_v1_title:"Persönlicher Kontakt",about_v1_text:"Direkte Kommunikation, schnelle Abstimmung und ein fester Ansprechpartner während des gesamten Projekts.",
+  about_v2_title:"Klare Lösungen",about_v2_text:"Keine unnötige Technik. Sie bekommen genau das, was Ihr Unternehmen wirklich braucht.",
+  about_v3_title:"Modern auf jedem Gerät",about_v3_text:"Ihre Website funktioniert sauber und professionell auf Smartphone, Tablet und Desktop.",
+  about_cta_label:"LASSEN SIE UNS STARTEN",about_cta_title:"Sie haben eine Idee für Ihre Website?",about_cta_text:"Erzählen Sie mir kurz von Ihrem Projekt. Das erste Gespräch ist kostenlos und unverbindlich.",about_cta_btn:"Kostenlose Beratung"
+ },
+ it:{
+  about_eyebrow:"CHI SONO",about_title:"Personale. Diretto. Digitale.",about_intro:"Mahli Digital crea siti web moderni senza complicazioni inutili, con assistenza personale dalla prima idea fino alla pubblicazione.",
+  about_name_label:"IL TUO REFERENTE",about_role:"Web design & soluzioni digitali",
+  about_story_label:"IL MIO APPROCCIO",about_story_title:"Siti web adatti alla tua attività.",about_story_text:"Realizzo siti web chiari, moderni e responsive per piccole e medie imprese. L'obiettivo non è creare soluzioni inutilmente complicate, ma una presenza online professionale, comprensibile, veloce e semplice da gestire.",about_story_text2:"Ogni progetto viene seguito personalmente. Parli direttamente con la persona che progetta e realizza il tuo sito, senza passaggi da agenzia e senza referenti che cambiano.",
+  about_v1_title:"Contatto personale",about_v1_text:"Comunicazione diretta, risposte rapide e un unico referente durante tutto il progetto.",
+  about_v2_title:"Soluzioni chiare",about_v2_text:"Niente tecnologia inutile. Ricevi esattamente ciò di cui la tua attività ha bisogno.",
+  about_v3_title:"Moderno su ogni dispositivo",about_v3_text:"Il tuo sito funziona in modo professionale su smartphone, tablet e desktop.",
+  about_cta_label:"INIZIAMO",about_cta_title:"Hai un'idea per il tuo sito?",about_cta_text:"Raccontami brevemente il tuo progetto. Il primo colloquio è gratuito e senza impegno.",about_cta_btn:"Consulenza gratuita"
+ },
+ hu:{
+  about_eyebrow:"RÓLAM",about_title:"Személyes. Közvetlen. Digitális.",about_intro:"A Mahli Digital modern weboldalakat készít felesleges bonyolítás nélkül, személyes kapcsolattartással az első ötlettől a kész oldal átadásáig.",
+  about_name_label:"KAPCSOLATTARTÓ",about_role:"Webdesign & digitális megoldások",
+  about_story_label:"AHOGYAN DOLGOZOM",about_story_title:"Weboldalak, amelyek illenek a vállalkozáshoz.",about_story_text:"Letisztult, modern és reszponzív weboldalakat készítek kis- és középvállalkozásoknak. Nem a feleslegesen bonyolult megoldások a cél, hanem egy professzionális online megjelenés, amely gyors, átlátható és könnyen kezelhető.",about_story_text2:"Minden projektet személyesen kezelek. Közvetlenül azzal beszélsz, aki a weboldaladat tervezi és elkészíti – közvetítők és állandóan változó kapcsolattartók nélkül.",
+  about_v1_title:"Személyes kapcsolat",about_v1_text:"Közvetlen kommunikáció, gyors egyeztetés és egy állandó kapcsolattartó a teljes projekt során.",
+  about_v2_title:"Átlátható megoldások",about_v2_text:"Nincs felesleges technika. Pontosan azt kapod, amire a vállalkozásodnak szüksége van.",
+  about_v3_title:"Modern minden eszközön",about_v3_text:"A weboldalad mobilon, tableten és asztali gépen is professzionálisan működik.",
+  about_cta_label:"KEZDJÜNK BELE",about_cta_title:"Van egy ötleted a weboldaladra?",about_cta_text:"Írd meg röviden, mire van szükséged. Az első egyeztetés ingyenes és kötelezettségmentes.",about_cta_btn:"Ingyenes konzultáció"
+ }};
+ function apply(lang){
+   lang=(lang||"de").toLowerCase().slice(0,2);
+   if(!A[lang]) lang="de";
+   document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.dataset.i18n;if(A[lang]&&A[lang][k]) el.textContent=A[lang][k];});
+ }
+ function current(){
+   const active=document.querySelector('[data-lang].active,[data-lang][aria-current="true"],.lang-btn.active,.language-btn.active');
+   if(active)return(active.dataset.lang||active.textContent).trim().toLowerCase().slice(0,2);
+   return(localStorage.getItem("lang")||localStorage.getItem("language")||document.documentElement.lang||"de").slice(0,2);
+ }
+ document.addEventListener("DOMContentLoaded",()=>{apply(current());setTimeout(()=>apply(current()),120)});
+ document.addEventListener("click",e=>{const b=e.target.closest("[data-lang],.lang-btn,.language-btn");if(!b)return;const l=(b.dataset.lang||b.textContent).trim().toLowerCase().slice(0,2);setTimeout(()=>apply(l),0)});
+})();
+</script>
+</body>
+</html>
