@@ -29,6 +29,9 @@
 .reference-link.muted{opacity:.55}
 @media(max-width:900px){.reference-grid{grid-template-columns:1fr 1fr}.reference-body p{min-height:0}}
 @media(max-width:620px){.references-page{width:min(100% - 24px,1180px);padding:52px 0}.reference-grid{grid-template-columns:1fr}.reference-preview{height:190px}}
+
+.mmi-reference-logo{position:absolute;z-index:1;left:50%;top:46%;transform:translate(-50%,-50%);width:min(78%,300px);max-height:125px;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(0,0,0,.35))}
+.reference-preview-mmi .preview-label{opacity:.72}
 </style>
 </head>
 <body>
@@ -67,6 +70,7 @@
   <div class="reference-grid">
     <article class="reference-card">
       <div class="reference-preview reference-preview-mmi">
+        <img class="mmi-reference-logo" src="assets/mmi-fazek-reference-logo.svg" alt="MMI Fazék">
         <div class="preview-label">MMI FAZÉK</div>
       </div>
       <div class="reference-body">
@@ -103,13 +107,28 @@
 <script>
 (function(){
  const R={
-  de:{nav_references:"Referenzen",ref_eyebrow:"REFERENZEN",ref_title:"Ausgewählte Projekte",ref_intro:"Websites, die klar, modern und passend zum jeweiligen Unternehmen umgesetzt wurden.",ref_mmi_type:"Automotive · Website",ref_mmi_text:"Mehrsprachige Website für Audi MMI, Diagnose und Fahrzeug-Elektronik – mit Leistungen, Galerie und Kontaktbereich.",ref_visit:"Website ansehen →",ref_next_label:"NÄCHSTES PROJEKT",ref_next_type:"Neue Referenz",ref_next_title:"Hier könnte Ihr Projekt stehen.",ref_next_text:"Sie möchten eine moderne Website für Ihr Unternehmen? Erzählen Sie mir kurz, was Sie brauchen.",ref_contact:"Projekt anfragen →"},
-  it:{nav_references:"Referenze",ref_eyebrow:"REFERENZE",ref_title:"Progetti selezionati",ref_intro:"Siti web chiari, moderni e realizzati su misura per ogni attività.",ref_mmi_type:"Automotive · Sito web",ref_mmi_text:"Sito multilingue dedicato ad Audi MMI, diagnostica ed elettronica dell’auto, con servizi, galleria e contatti.",ref_visit:"Visita il sito →",ref_next_label:"PROSSIMO PROGETTO",ref_next_type:"Nuova referenza",ref_next_title:"Qui potrebbe esserci il tuo progetto.",ref_next_text:"Vuoi un sito moderno per la tua attività? Raccontami brevemente di cosa hai bisogno.",ref_contact:"Richiedi un progetto →"},
-  hu:{nav_references:"Referenciák",ref_eyebrow:"REFERENCIÁK",ref_title:"Kiemelt projektek",ref_intro:"Letisztult, modern és az adott vállalkozásra szabott weboldalak.",ref_mmi_type:"Autóipar · Weboldal",ref_mmi_text:"Többnyelvű weboldal Audi MMI, diagnosztika és autóelektronika témában, szolgáltatásokkal, galériával és kapcsolat oldallal.",ref_visit:"Weboldal megnyitása →",ref_next_label:"KÖVETKEZŐ PROJEKT",ref_next_type:"Új referencia",ref_next_title:"Itt lehetne az Ön projektje.",ref_next_text:"Modern weboldalt szeretne vállalkozásának? Írja meg röviden, mire van szüksége.",ref_contact:"Projekt ajánlatkérés →"}
+  de:{ref_eyebrow:"REFERENZEN",ref_title:"Ausgewählte Projekte",ref_intro:"Websites, die klar, modern und passend zum jeweiligen Unternehmen umgesetzt wurden.",ref_mmi_type:"Automotive · Website",ref_mmi_text:"Mehrsprachige Website für Audi MMI, Diagnose und Fahrzeug-Elektronik – mit Leistungen, Galerie und Kontaktbereich.",ref_visit:"Website ansehen →",ref_next_label:"NÄCHSTES PROJEKT",ref_next_type:"Neue Referenz",ref_next_title:"Hier könnte Ihr Projekt stehen.",ref_next_text:"Sie möchten eine moderne Website für Ihr Unternehmen? Erzählen Sie mir kurz, was Sie brauchen.",ref_contact:"Projekt anfragen →"},
+  it:{ref_eyebrow:"REFERENZE",ref_title:"Progetti selezionati",ref_intro:"Siti web chiari, moderni e realizzati su misura per ogni attività.",ref_mmi_type:"Automotive · Sito web",ref_mmi_text:"Sito multilingue dedicato ad Audi MMI, diagnostica ed elettronica dell’auto, con servizi, galleria e contatti.",ref_visit:"Visita il sito →",ref_next_label:"PROSSIMO PROGETTO",ref_next_type:"Nuova referenza",ref_next_title:"Qui potrebbe esserci il tuo progetto.",ref_next_text:"Vuoi un sito moderno per la tua attività? Raccontami brevemente di cosa hai bisogno.",ref_contact:"Richiedi un progetto →"},
+  hu:{ref_eyebrow:"REFERENCIÁK",ref_title:"Kiemelt projektek",ref_intro:"Letisztult, modern és az adott vállalkozásra szabott weboldalak.",ref_mmi_type:"Autóipar · Weboldal",ref_mmi_text:"Többnyelvű weboldal Audi MMI, diagnosztika és autóelektronika témában, szolgáltatásokkal, galériával és kapcsolat oldallal.",ref_visit:"Weboldal megnyitása →",ref_next_label:"KÖVETKEZŐ PROJEKT",ref_next_type:"Új referencia",ref_next_title:"Itt lehetne az Ön projektje.",ref_next_text:"Modern weboldalt szeretne vállalkozásának? Írja meg röviden, mire van szüksége.",ref_contact:"Projekt ajánlatkérés →"}
  };
- function apply(lang){ if(!R[lang]) return; document.querySelectorAll("[data-i18n]").forEach(el=>{let k=el.dataset.i18n;if(R[lang][k])el.textContent=R[lang][k];});}
- document.addEventListener("click",e=>{let b=e.target.closest("[data-lang]");if(b)setTimeout(()=>apply(b.dataset.lang),0);});
- let saved=localStorage.getItem("lang")||localStorage.getItem("language")||"de"; apply(saved);
+ function apply(lang){
+   lang=(lang||"de").toLowerCase();
+   if(!R[lang]) lang="de";
+   document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.dataset.i18n;if(R[lang][k]) el.textContent=R[lang][k];});
+ }
+ function current(){
+   const active=document.querySelector('[data-lang].active,[data-lang][aria-current="true"],.lang-btn.active,.language-btn.active');
+   if(active) return (active.dataset.lang||active.textContent).trim().toLowerCase();
+   return (localStorage.getItem("lang")||localStorage.getItem("language")||document.documentElement.lang||"de").slice(0,2);
+ }
+ document.addEventListener("DOMContentLoaded",()=>{apply(current()); setTimeout(()=>apply(current()),100);});
+ document.addEventListener("click",e=>{
+   const b=e.target.closest("[data-lang],.lang-btn,.language-btn");
+   if(!b) return;
+   const lang=(b.dataset.lang||b.textContent).trim().toLowerCase().slice(0,2);
+   setTimeout(()=>apply(lang),0);
+ });
+ new MutationObserver(()=>apply(current())).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});
 })();
 </script>
 </body>
