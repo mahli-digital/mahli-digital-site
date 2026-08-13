@@ -7,6 +7,76 @@
   <meta name="description" content="Persönlich entwickelte Webseiten für Hotels, Handwerksbetriebe und Gastronomie in Südtirol.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
+
+<style id="home-mobile-header-fix">
+@media (max-width: 760px){
+  /* Match the stable mobile header behavior used on the subpages */
+  header,
+  .site-header,
+  .topbar,
+  .navbar,
+  .nav-wrap,
+  .header-wrap{
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 9999 !important;
+  }
+
+  header,
+  .site-header{
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  header > *,
+  .site-header > *,
+  .topbar,
+  .navbar,
+  .nav-wrap,
+  .header-wrap{
+    box-sizing: border-box !important;
+  }
+
+  /* Prevent the home header from stretching wider than the viewport */
+  .topbar,
+  .navbar,
+  .nav-wrap,
+  .header-wrap{
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Keep logo / hamburger compact and vertically aligned */
+  .brand,
+  .logo,
+  .site-logo{
+    flex: 0 0 auto !important;
+  }
+
+  .menu-toggle,
+  .nav-toggle,
+  .hamburger{
+    flex: 0 0 auto !important;
+    margin-left: auto !important;
+  }
+
+  /* Avoid accidental header disappearance caused by home-only transforms */
+  header.hide,
+  header.hidden,
+  .site-header.hide,
+  .site-header.hidden{
+    transform: none !important;
+    translate: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+</style>
 </head>
 <body>
   <div class="page-bg" aria-hidden="true"></div>
