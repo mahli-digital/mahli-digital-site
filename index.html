@@ -8,23 +8,24 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
 
-<style id="home-mobile-header-fix-v2">
+<style id="home-mobile-header-fix-v3">
 @media (max-width: 760px){
-  html,body{overflow-x:hidden!important}
+  html,body{
+    overflow-x:hidden!important;
+  }
 
-  /* Home header: same compact centered card as the subpages */
   header.site-header,
   .site-header{
-    position:sticky!important;
+    position:fixed!important;
     top:8px!important;
-    left:auto!important;
-    right:auto!important;
-    width:calc(100% - 24px)!important;
-    max-width:calc(100% - 24px)!important;
-    margin:8px auto 0!important;
+    left:12px!important;
+    right:12px!important;
+    width:auto!important;
+    max-width:none!important;
+    margin:0!important;
     transform:none!important;
     translate:none!important;
-    z-index:9999!important;
+    z-index:10000!important;
     box-sizing:border-box!important;
   }
 
@@ -43,7 +44,6 @@
     align-items:center!important;
   }
 
-  /* Never let the logo push hamburger/language controls outside viewport */
   .site-header .brand,
   .site-header .logo,
   .site-header .site-logo,
@@ -53,6 +53,7 @@
     flex:0 1 auto!important;
     max-width:44%!important;
   }
+
   .site-header .brand img,
   .site-header .logo img,
   .site-header .site-logo img,
@@ -83,7 +84,6 @@
     margin-left:10px!important;
   }
 
-  /* Open mobile navigation must stay inside the screen */
   .site-header nav,
   .site-header .mobile-nav,
   header .mobile-nav{
@@ -91,7 +91,6 @@
     box-sizing:border-box!important;
   }
 
-  /* Cancel any home-only scroll-away state */
   .site-header.hidden,
   .site-header.hide,
   .site-header.scrolled-away,
@@ -101,6 +100,11 @@
     translate:none!important;
     opacity:1!important;
     visibility:visible!important;
+  }
+
+  /* prevent first content from sitting under the fixed header */
+  body{
+    padding-top:88px!important;
   }
 }
 </style>
