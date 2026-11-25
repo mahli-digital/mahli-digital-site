@@ -36,6 +36,9 @@
 .reference-preview-mmi,.reference-preview-locsei{background-color:#08090b}
 .mmi-reference-logo,.locsei-reference-logo{position:absolute;z-index:1;left:50%;top:44%;transform:translate(-50%,-50%);width:82%;height:74%;max-height:none;object-fit:contain;filter:drop-shadow(0 6px 15px rgba(0,0,0,.3))}
 .reference-preview-locsei .preview-label{color:#e6c98b}
+.reference-preview-hajdu{background:radial-gradient(ellipse at 50% 35%,#3b171c,#090b0f 75%)}
+.hajdu-reference-logo{position:absolute;z-index:1;left:50%;top:44%;transform:translate(-50%,-50%);width:82%;height:74%;object-fit:contain;filter:drop-shadow(0 6px 15px rgba(0,0,0,.3))}
+@media(min-width:901px){.reference-grid{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1180px}.reference-card{display:flex;flex-direction:column}.reference-body{flex:1;display:flex;flex-direction:column}.reference-link{margin-top:auto}}
 </style>
 </head>
 <body>
@@ -96,6 +99,18 @@
         <a class="reference-link" href="https://locseiszalon.hu/" target="_blank" rel="noopener" data-i18n="ref_visit">Website ansehen →</a>
       </div>
     </article>
+    <article class="reference-card">
+      <div class="reference-preview reference-preview-hajdu">
+        <img class="hajdu-reference-logo" src="https://hajdugym.hu/assets/logo.png" alt="Hajdú Gym" loading="lazy">
+        <div class="preview-label">HAJDÚ GYM</div>
+      </div>
+      <div class="reference-body">
+        <div class="reference-type" data-i18n="ref_hajdu_type">Fitness · Website</div>
+        <h2>Hajdú Gym</h2>
+        <p data-i18n="ref_hajdu_text">Sportliche Website für privates Personal Training in Budapest-Kispest – mit Trainingsangebot, Trainerprofil, Ergebnissen, nützlichen Informationen und Kontakt.</p>
+        <a class="reference-link" href="https://hajdugym.hu/" target="_blank" rel="noopener" data-i18n="ref_visit">Website ansehen →</a>
+      </div>
+    </article>
   </div>
 </section>
 </main>
@@ -112,9 +127,9 @@
 <script>
 (function(){
  const R={
-  de:{ref_locsei_type:"Beauty · Website",ref_locsei_text:"Elegante Website für einen Budapester Schönheitssalon mit Friseur, Maniküre, Pediküre und Wimpernverlängerung – inklusive Leistungsübersicht und Kontaktbereich.",ref_eyebrow:"REFERENZEN",ref_title:"Ausgewählte Projekte",ref_intro:"Websites, die klar, modern und passend zum jeweiligen Unternehmen umgesetzt wurden.",ref_mmi_type:"Automotive · Website",ref_mmi_text:"Mehrsprachige Website für Audi MMI, Diagnose und Fahrzeug-Elektronik – mit Leistungen, Galerie und Kontaktbereich.",ref_visit:"Website ansehen →",ref_next_label:"NÄCHSTES PROJEKT",ref_next_type:"Neue Referenz",ref_next_title:"Hier könnte Ihr Projekt stehen.",ref_next_text:"Sie möchten eine moderne Website für Ihr Unternehmen? Erzählen Sie mir kurz, was Sie brauchen.",ref_contact:"Projekt anfragen →"},
-  it:{ref_locsei_type:"Beauty · Sito web",ref_locsei_text:"Sito elegante per un salone di bellezza di Budapest, con parrucchiere, manicure, pedicure ed extension ciglia, panoramica dei servizi e contatti.",ref_eyebrow:"REFERENZE",ref_title:"Progetti selezionati",ref_intro:"Siti web chiari, moderni e realizzati su misura per ogni attività.",ref_mmi_type:"Automotive · Sito web",ref_mmi_text:"Sito multilingue dedicato ad Audi MMI, diagnostica ed elettronica dell’auto, con servizi, galleria e contatti.",ref_visit:"Visita il sito →",ref_next_label:"PROSSIMO PROGETTO",ref_next_type:"Nuova referenza",ref_next_title:"Qui potrebbe esserci il tuo progetto.",ref_next_text:"Vuoi un sito moderno per la tua attività? Raccontami brevemente di cosa hai bisogno.",ref_contact:"Richiedi un progetto →"},
-  hu:{ref_locsei_type:"Szépségipar · Weboldal",ref_locsei_text:"Elegáns weboldal egy budapesti szépségszalon számára, fodrászattal, manikűrrel, pedikűrrel és szempillaépítéssel, részletes szolgáltatásokkal és elérhetőségekkel.",ref_eyebrow:"REFERENCIÁK",ref_title:"Kiemelt projektek",ref_intro:"Letisztult, modern és az adott vállalkozásra szabott weboldalak.",ref_mmi_type:"Autóipar · Weboldal",ref_mmi_text:"Többnyelvű weboldal Audi MMI, diagnosztika és autóelektronika témában, szolgáltatásokkal, galériával és kapcsolat oldallal.",ref_visit:"Weboldal megnyitása →",ref_next_label:"KÖVETKEZŐ PROJEKT",ref_next_type:"Új referencia",ref_next_title:"Itt lehetne az Ön projektje.",ref_next_text:"Modern weboldalt szeretne vállalkozásának? Írja meg röviden, mire van szüksége.",ref_contact:"Projekt ajánlatkérés →"}
+  de:{ref_hajdu_type:"Fitness · Website",ref_hajdu_text:"Sportliche Website für privates Personal Training in Budapest-Kispest – mit Trainingsangebot, Trainerprofil, Ergebnissen, nützlichen Informationen und Kontakt.",ref_locsei_type:"Beauty · Website",ref_locsei_text:"Elegante Website für einen Budapester Schönheitssalon mit Friseur, Maniküre, Pediküre und Wimpernverlängerung – inklusive Leistungsübersicht und Kontaktbereich.",ref_eyebrow:"REFERENZEN",ref_title:"Ausgewählte Projekte",ref_intro:"Websites, die klar, modern und passend zum jeweiligen Unternehmen umgesetzt wurden.",ref_mmi_type:"Automotive · Website",ref_mmi_text:"Mehrsprachige Website für Audi MMI, Diagnose und Fahrzeug-Elektronik – mit Leistungen, Galerie und Kontaktbereich.",ref_visit:"Website ansehen →",ref_next_label:"NÄCHSTES PROJEKT",ref_next_type:"Neue Referenz",ref_next_title:"Hier könnte Ihr Projekt stehen.",ref_next_text:"Sie möchten eine moderne Website für Ihr Unternehmen? Erzählen Sie mir kurz, was Sie brauchen.",ref_contact:"Projekt anfragen →"},
+  it:{ref_hajdu_type:"Fitness · Sito web",ref_hajdu_text:"Sito dal design sportivo per il personal training privato a Budapest-Kispest, con allenamenti, profilo del trainer, risultati, informazioni utili e contatti.",ref_locsei_type:"Beauty · Sito web",ref_locsei_text:"Sito elegante per un salone di bellezza di Budapest, con parrucchiere, manicure, pedicure ed extension ciglia, panoramica dei servizi e contatti.",ref_eyebrow:"REFERENZE",ref_title:"Progetti selezionati",ref_intro:"Siti web chiari, moderni e realizzati su misura per ogni attività.",ref_mmi_type:"Automotive · Sito web",ref_mmi_text:"Sito multilingue dedicato ad Audi MMI, diagnostica ed elettronica dell’auto, con servizi, galleria e contatti.",ref_visit:"Visita il sito →",ref_next_label:"PROSSIMO PROGETTO",ref_next_type:"Nuova referenza",ref_next_title:"Qui potrebbe esserci il tuo progetto.",ref_next_text:"Vuoi un sito moderno per la tua attività? Raccontami brevemente di cosa hai bisogno.",ref_contact:"Richiedi un progetto →"},
+  hu:{ref_hajdu_type:"Fitnesz · Weboldal",ref_hajdu_text:"Sportos weboldal budapesti, kispesti privát személyi edzéshez, edzésbemutatóval, edzői profillal, eredményekkel, hasznos információkkal és elérhetőségekkel.",ref_locsei_type:"Szépségipar · Weboldal",ref_locsei_text:"Elegáns weboldal egy budapesti szépségszalon számára, fodrászattal, manikűrrel, pedikűrrel és szempillaépítéssel, részletes szolgáltatásokkal és elérhetőségekkel.",ref_eyebrow:"REFERENCIÁK",ref_title:"Kiemelt projektek",ref_intro:"Letisztult, modern és az adott vállalkozásra szabott weboldalak.",ref_mmi_type:"Autóipar · Weboldal",ref_mmi_text:"Többnyelvű weboldal Audi MMI, diagnosztika és autóelektronika témában, szolgáltatásokkal, galériával és kapcsolat oldallal.",ref_visit:"Weboldal megnyitása →",ref_next_label:"KÖVETKEZŐ PROJEKT",ref_next_type:"Új referencia",ref_next_title:"Itt lehetne az Ön projektje.",ref_next_text:"Modern weboldalt szeretne vállalkozásának? Írja meg röviden, mire van szüksége.",ref_contact:"Projekt ajánlatkérés →"}
  };
  function apply(lang){
    lang=(lang||"de").toLowerCase();
