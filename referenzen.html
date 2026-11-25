@@ -32,6 +32,10 @@
 
 .mmi-reference-logo{position:absolute;z-index:1;left:50%;top:46%;transform:translate(-50%,-50%);width:min(78%,300px);max-height:125px;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(0,0,0,.35))}
 .reference-preview-mmi .preview-label{opacity:.72}
+.reference-preview-locsei{background:radial-gradient(ellipse at 50% 35%,#403321,#110f0d 72%)}
+.reference-preview-mmi,.reference-preview-locsei{background-color:#08090b}
+.mmi-reference-logo,.locsei-reference-logo{position:absolute;z-index:1;left:50%;top:44%;transform:translate(-50%,-50%);width:82%;height:74%;max-height:none;object-fit:contain;filter:drop-shadow(0 6px 15px rgba(0,0,0,.3))}
+.reference-preview-locsei .preview-label{color:#e6c98b}
 </style>
 </head>
 <body>
@@ -43,9 +47,9 @@
     <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav" aria-label="Hauptnavigation">
       <a href="index.html" data-i18n="nav.home">Start</a>
-      <a class="active" href="leistungen.html" data-i18n="nav.services">Leistungen</a>
+      <a href="leistungen.html" data-i18n="nav.services">Leistungen</a>
       <a href="preise.html" data-i18n="nav.prices">Preise</a>
-      <a href="referenzen.html" data-i18n="nav.references">Referenzen</a>
+      <a class="active" href="referenzen.html" data-i18n="nav.references">Referenzen</a>
       <a href="ueber-uns.html" data-i18n="nav.about">Über uns</a>
       <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
     </nav>
@@ -70,25 +74,26 @@
   <div class="reference-grid">
     <article class="reference-card">
       <div class="reference-preview reference-preview-mmi">
-        <img class="mmi-reference-logo" src="assets/mmi-fazek-reference-logo.svg" alt="MMI Fazék">
+        <img class="mmi-reference-logo" src="https://mmifazek.hu/assets/mmi-fazek-logo-new.png?v=20261113b" alt="MMI Fazék">
         <div class="preview-label">MMI FAZÉK</div>
       </div>
       <div class="reference-body">
         <div class="reference-type" data-i18n="ref_mmi_type">Automotive · Website</div>
         <h2>MMI Fazék</h2>
         <p data-i18n="ref_mmi_text">Mehrsprachige Website für Audi MMI, Diagnose und Fahrzeug-Elektronik – mit Leistungen, Galerie und Kontaktbereich.</p>
-        <a class="reference-link" href="https://mmifazek.com" target="_blank" rel="noopener" data-i18n="ref_visit">Website ansehen →</a>
+        <a class="reference-link" href="https://mmifazek.hu/" target="_blank" rel="noopener" data-i18n="ref_visit">Website ansehen →</a>
       </div>
     </article>
 <article class="reference-card">
-      <div class="reference-preview reference-preview-next">
-        <div class="preview-label" data-i18n="ref_next_label">NÄCHSTES PROJEKT</div>
+      <div class="reference-preview reference-preview-locsei">
+        <img class="locsei-reference-logo" src="https://locseiszalon.hu/L%C5%91csei%20Szalon%20arany%20glamour%20embl%C3%A9ma.png" alt="Lőcsei Szalon" loading="lazy">
+        <div class="preview-label">LŐCSEI SZALON</div>
       </div>
       <div class="reference-body">
-        <div class="reference-type" data-i18n="ref_next_type">Neue Referenz</div>
-        <h2 data-i18n="ref_next_title">Hier könnte Ihr Projekt stehen.</h2>
-        <p data-i18n="ref_next_text">Sie möchten eine moderne Website für Ihr Unternehmen? Erzählen Sie mir kurz, was Sie brauchen.</p>
-        <a class="reference-link" href="kontakt.html" data-i18n="ref_contact">Projekt anfragen →</a>
+        <div class="reference-type" data-i18n="ref_locsei_type">Beauty · Website</div>
+        <h2>Lőcsei Szalon</h2>
+        <p data-i18n="ref_locsei_text">Elegante Website für einen Budapester Schönheitssalon mit Friseur, Maniküre, Pediküre und Wimpernverlängerung – inklusive Leistungsübersicht und Kontaktbereich.</p>
+        <a class="reference-link" href="https://locseiszalon.hu/" target="_blank" rel="noopener" data-i18n="ref_visit">Website ansehen →</a>
       </div>
     </article>
   </div>
@@ -107,9 +112,9 @@
 <script>
 (function(){
  const R={
-  de:{ref_eyebrow:"REFERENZEN",ref_title:"Ausgewählte Projekte",ref_intro:"Websites, die klar, modern und passend zum jeweiligen Unternehmen umgesetzt wurden.",ref_mmi_type:"Automotive · Website",ref_mmi_text:"Mehrsprachige Website für Audi MMI, Diagnose und Fahrzeug-Elektronik – mit Leistungen, Galerie und Kontaktbereich.",ref_visit:"Website ansehen →",ref_next_label:"NÄCHSTES PROJEKT",ref_next_type:"Neue Referenz",ref_next_title:"Hier könnte Ihr Projekt stehen.",ref_next_text:"Sie möchten eine moderne Website für Ihr Unternehmen? Erzählen Sie mir kurz, was Sie brauchen.",ref_contact:"Projekt anfragen →"},
-  it:{ref_eyebrow:"REFERENZE",ref_title:"Progetti selezionati",ref_intro:"Siti web chiari, moderni e realizzati su misura per ogni attività.",ref_mmi_type:"Automotive · Sito web",ref_mmi_text:"Sito multilingue dedicato ad Audi MMI, diagnostica ed elettronica dell’auto, con servizi, galleria e contatti.",ref_visit:"Visita il sito →",ref_next_label:"PROSSIMO PROGETTO",ref_next_type:"Nuova referenza",ref_next_title:"Qui potrebbe esserci il tuo progetto.",ref_next_text:"Vuoi un sito moderno per la tua attività? Raccontami brevemente di cosa hai bisogno.",ref_contact:"Richiedi un progetto →"},
-  hu:{ref_eyebrow:"REFERENCIÁK",ref_title:"Kiemelt projektek",ref_intro:"Letisztult, modern és az adott vállalkozásra szabott weboldalak.",ref_mmi_type:"Autóipar · Weboldal",ref_mmi_text:"Többnyelvű weboldal Audi MMI, diagnosztika és autóelektronika témában, szolgáltatásokkal, galériával és kapcsolat oldallal.",ref_visit:"Weboldal megnyitása →",ref_next_label:"KÖVETKEZŐ PROJEKT",ref_next_type:"Új referencia",ref_next_title:"Itt lehetne az Ön projektje.",ref_next_text:"Modern weboldalt szeretne vállalkozásának? Írja meg röviden, mire van szüksége.",ref_contact:"Projekt ajánlatkérés →"}
+  de:{ref_locsei_type:"Beauty · Website",ref_locsei_text:"Elegante Website für einen Budapester Schönheitssalon mit Friseur, Maniküre, Pediküre und Wimpernverlängerung – inklusive Leistungsübersicht und Kontaktbereich.",ref_eyebrow:"REFERENZEN",ref_title:"Ausgewählte Projekte",ref_intro:"Websites, die klar, modern und passend zum jeweiligen Unternehmen umgesetzt wurden.",ref_mmi_type:"Automotive · Website",ref_mmi_text:"Mehrsprachige Website für Audi MMI, Diagnose und Fahrzeug-Elektronik – mit Leistungen, Galerie und Kontaktbereich.",ref_visit:"Website ansehen →",ref_next_label:"NÄCHSTES PROJEKT",ref_next_type:"Neue Referenz",ref_next_title:"Hier könnte Ihr Projekt stehen.",ref_next_text:"Sie möchten eine moderne Website für Ihr Unternehmen? Erzählen Sie mir kurz, was Sie brauchen.",ref_contact:"Projekt anfragen →"},
+  it:{ref_locsei_type:"Beauty · Sito web",ref_locsei_text:"Sito elegante per un salone di bellezza di Budapest, con parrucchiere, manicure, pedicure ed extension ciglia, panoramica dei servizi e contatti.",ref_eyebrow:"REFERENZE",ref_title:"Progetti selezionati",ref_intro:"Siti web chiari, moderni e realizzati su misura per ogni attività.",ref_mmi_type:"Automotive · Sito web",ref_mmi_text:"Sito multilingue dedicato ad Audi MMI, diagnostica ed elettronica dell’auto, con servizi, galleria e contatti.",ref_visit:"Visita il sito →",ref_next_label:"PROSSIMO PROGETTO",ref_next_type:"Nuova referenza",ref_next_title:"Qui potrebbe esserci il tuo progetto.",ref_next_text:"Vuoi un sito moderno per la tua attività? Raccontami brevemente di cosa hai bisogno.",ref_contact:"Richiedi un progetto →"},
+  hu:{ref_locsei_type:"Szépségipar · Weboldal",ref_locsei_text:"Elegáns weboldal egy budapesti szépségszalon számára, fodrászattal, manikűrrel, pedikűrrel és szempillaépítéssel, részletes szolgáltatásokkal és elérhetőségekkel.",ref_eyebrow:"REFERENCIÁK",ref_title:"Kiemelt projektek",ref_intro:"Letisztult, modern és az adott vállalkozásra szabott weboldalak.",ref_mmi_type:"Autóipar · Weboldal",ref_mmi_text:"Többnyelvű weboldal Audi MMI, diagnosztika és autóelektronika témában, szolgáltatásokkal, galériával és kapcsolat oldallal.",ref_visit:"Weboldal megnyitása →",ref_next_label:"KÖVETKEZŐ PROJEKT",ref_next_type:"Új referencia",ref_next_title:"Itt lehetne az Ön projektje.",ref_next_text:"Modern weboldalt szeretne vállalkozásának? Írja meg röviden, mire van szüksége.",ref_contact:"Projekt ajánlatkérés →"}
  };
  function apply(lang){
    lang=(lang||"de").toLowerCase();
